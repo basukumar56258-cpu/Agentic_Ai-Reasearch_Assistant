@@ -1,0 +1,96 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #07111f;
+  color: #eaf2ff;
+}
+.app { min-height: 100vh; }
+header {
+  text-align: center;
+  padding: 70px 20px 35px;
+  background: radial-gradient(circle at top, #15335b, #07111f 60%);
+}
+.badge {
+  display: inline-block;
+  padding: 7px 12px;
+  border: 1px solid #2f80ed;
+  border-radius: 999px;
+  color: #75b5ff;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
+h1 { font-size: clamp(38px, 7vw, 68px); margin: 15px 0 10px; }
+header p { color: #9eb0c8; font-size: 18px; }
+main { width: min(950px, 92%); margin: auto; padding-bottom: 50px; }
+.search-box, .card {
+  background: #0d1b2d;
+  border: 1px solid #1c3552;
+  border-radius: 18px;
+  padding: 22px;
+  margin: 18px 0;
+}
+textarea {
+  width: 100%;
+  resize: vertical;
+  border: 1px solid #294767;
+  border-radius: 12px;
+  padding: 16px;
+  background: #07111f;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+button {
+  margin-top: 14px;
+  width: 100%;
+  padding: 14px;
+  border: 0;
+  border-radius: 11px;
+  background: #2f80ed;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+button:disabled { opacity: .6; cursor: wait; }
+.steps { display: flex; gap: 12px; flex-wrap: wrap; }
+.steps span {
+  background: #122842;
+  padding: 10px 13px;
+  border-radius: 9px;
+  color: #9bc8ff;
+}
+.report pre {
+  white-space: pre-wrap;
+  line-height: 1.7;
+  font-family: inherit;
+  color: #dbe8f7;
+}
+.source {
+  display: block;
+  color: #b8d8ff;
+  padding: 13px;
+  margin: 8px 0;
+  background: #09172a;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.source:hover { background: #10243d; }
+.source small {
+  display: block;
+  color: #7188a3;
+  margin-top: 5px;
+  overflow-wrap: anywhere;
+}
+.error {
+  padding: 15px;
+  border-radius: 10px;
+  background: #3a1820;
+  color: #ffb7c1;
+}
+footer { text-align: center; padding: 25px; color: #667c96; }
+@media (max-width: 600px) {
+  header { padding-top: 45px; }
+  .card, .search-box { padding: 16px; }
+}
